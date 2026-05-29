@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "themes": {
+    "install": [
+      {
+        "repo": "https://github.com/bjarneo/omarchy-monokai-theme",
+        "apply_theme": true
+      }
+    ],
+    "backgrounds": [
+      {
+        "theme": "monokai",
+        "source": "wallpaper_digital_wooded_valley.jpg",
+        "target_name": "digital_wooded_valley.jpg",
+        "set_as_default": true
+      }
+    ]
+  },
+  "files": [
+    {
+      "path": "~/.config/waybar/style.css",
+      "action": "replace",
+      "search": "font-size: 12px;",
+      "replace": "font-size: 13px;"
+    },
+    {
+      "path": "~/.config/waybar/style.css",
+      "action": "replace",
+      "search": "background-color: @background;",
+      "replace": "background-color: transparent;"
+    },
+    {
+      "path": "~/.config/waybar/style.css",
+      "action": "append",
+      "content": "\n#waybar { background-color: rgba(0, 0, 0, 0.1); }\n"
+    },
+    {
+      "path": "~/.config/waybar/config.jsonc",
+      "action": "replace",
+      "search": "\"height\": 26",
+      "replace": "\"height\": 32"
+    },
+    {
+      "path": "~/.config/hypr/looknfeel.conf",
+      "action": "replace",
+      "search": "# gaps_in = 0",
+      "replace": "gaps_in = 0"
+    },
+    {
+      "path": "~/.config/hypr/looknfeel.conf",
+      "action": "replace",
+      "search": "# gaps_out = 0",
+      "replace": "gaps_out = 0"
+    },
+    {
+      "path": "~/.config/hypr/lookandfeel.conf",
+      "action": "replace",
+      "search": "# border_size = 0",
+      "replace": "border_size = 1"
+    },
+    {
+      "path": "~/.bashrc",
+      "action": "ensure_line",
+      "content": "source /usr/share/nvm/init-nvm.sh"
+    }
+  ],
+  "browsers": {
+    "add": [
+      "google-chrome"    
+    ],
+    "remove": []
+  },
+  "editors": {
+    "add": [
+      "code"
+    ],
+    "remove": []
+  },
+  "packages": {
+    "add": [
+      "rclone",
+      "restic",
+      "nvm"
+    ],
+    "remove": []
+  },
+  "web_apps": {
+    "add": [
+      {
+        "name": "Google Mail",
+        "url": "https://mail.google.com"
+      },
+      {
+        "name": "Google Drive",
+        "url": "https://drive.google.com"
+      },
+      {
+        "name": "Notion",
+        "url": "https://notion.so"
+      },
+      {
+        "name": "Linear",
+        "url": "https://linear.app"
+      },
+      {
+        "name": "Vercel",
+        "url": "https://vercel.com"
+      },
+      {
+        "name": "Supabase",
+        "url": "https://supabase.com"
+      },
+      {
+        "name": "Gitlab",
+        "url": "https://gitlab.com"
+      }
+    ],
+    "remove": [
+      "Basecamp",
+      "Discord",
+      "Figma",
+      "Fizzyo",
+      "Hey",
+      "Zoom"
+    ]
+  }
+}
