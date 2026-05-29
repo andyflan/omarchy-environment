@@ -53,7 +53,7 @@
       "replace": "gaps_out = 0"
     },
     {
-      "path": "~/.config/hypr/lookandfeel.conf",
+      "path": "~/.config/hypr/looknfeel.conf",
       "action": "replace",
       "search": "# border_size = 0",
       "replace": "border_size = 1"
