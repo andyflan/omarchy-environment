@@ -78,6 +78,7 @@
   },
   "packages": {
     "add": [
+      "gnome-keyring",
       "rclone",
       "restic",
       "nvm"
